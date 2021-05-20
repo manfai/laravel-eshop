@@ -1,0 +1,40 @@
+{
+    "name": "manfai/laravel-shop",
+    "description": "e-shop for laravel project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "manfai",
+            "email": "manfai106@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/contracts": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "ManFai\\Shop\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ManFai\\Shop\\": "src/",
+            "ManFai\\Shop\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ManFai\\Shop\\Providers\\ShopServiceProvider"
+            ]
+        }
+    }
+}
